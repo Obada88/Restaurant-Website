@@ -1,0 +1,516 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-size: 68.68%;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s linear;
+}
+:root{
+    --main-color:#343a40;
+    --margin:0.5rem;
+    --Secdonry:#fff;
+    --Warring:#ffc107;
+    --light-color:#777;
+    --background:#ffc107;
+    --border:2px solid #343a40;
+    --fw-blod:500;
+    --fw-light:400;
+    --transtion:0.5s ease-in-out;
+}
+
+
+/**************** Start Navbar ****************/
+.navbar-brand{
+    color: var(--main-color);
+    font-weight:var(--fw-light);
+    transition: var(--transtion);
+}
+.navbar-brand:hover{
+    color: var(--Warring);
+}
+.nav-link {
+    margin: var(--margin);
+    font-size: 1.1rem;
+    font-weight: var(--fw-light);
+    color: var(--main-color);
+    transition: var(--transtion);
+}
+.nav-link:hover{
+    color: var(--background);
+}
+.icon-nav i{
+    margin: 1rem;
+    font-size: 1.2rem;
+    transition: var(--transtion);
+}
+.icon-nav i:hover{
+    color: var(--background);
+}
+.icon-bars {
+    transition: var(--transtion);
+}
+.icon-bars:hover{
+    transform: rotate(360deg);
+}
+.fa-magnifying-glass,.fa-cart-shopping{
+    color: var(--main-color);
+}
+.fa-user,.number{
+    color: var(--main-color);
+}
+/**************** End Navabr ******************/
+
+/**************** Start Home ******************/
+.box-img-home img{
+    max-width: 100%;
+}
+.box-content-home{
+    flex: 1 1 40rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.box-content-home span{
+    font-size: 2.5rem;
+    color:var(--light-color);
+}
+.box-content-home h3{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: 1rem 0;
+    font-weight: var(--fw-light);
+}
+.btn-home{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    width: 400px;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    transition: var(--transtion);
+}
+.btn-home:hover{
+    letter-spacing: 2px;
+}
+
+/*** Section cat *****/
+
+.box-cat{
+    border: var(--border);
+    padding: 1rem;
+    transition: var(--transtion);
+    text-align: center;
+    height: 20rem;
+    margin: 1rem;
+   
+}
+.box-cat:hover{
+    background-color: var(--main-color);
+}
+
+.box-cat-img img{
+    max-width: 100%;
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    transition: var(--main-color);
+  
+}
+.box-cat:hover img{
+    filter: invert(1);
+}
+.box-cat-contetn h5{
+    margin: 1rem;
+    text-align: center;
+}
+.box-cat:hover h5{
+   color: var(--Secdonry);
+
+}
+/***** Start Lest*****/
+.box-lest{
+    border: var(--border);
+    text-align: center;
+    height: 25rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.box-lest-img img{
+    max-width: 100%;
+    width: 100%;
+    height:15rem;
+    object-fit: contain;
+}
+.icons-shop{
+    display: flex;
+    justify-content: space-between;
+}
+.icons-shop i{
+    font-size: 1.2rem;
+    border: var(--border);
+    padding: 0.5rem;
+    opacity: 0;
+    transition: var(--transtion);
+}
+.icons-shop:hover .fa-eye{
+    background-color: var(--main-color);
+    color: var(--Secdonry);
+}
+.icons-shop:hover .fa-cart-shopping{
+    background-color: var(--main-color);
+    color: var(--Secdonry);
+}
+.box-lest:hover i{
+    opacity: 1;
+}
+.box-lest-content a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    transition: var(--transtion);
+}
+.box-lest-content a:hover{
+    color: var(--Warring);
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price span{
+    font-size: 1.2rem;
+    font-weight: var(--fw-blod);
+}
+.price input{
+    width: 50px;
+    height: 30px;
+    font-size: 1rem;
+    border: var(--border);
+}
+.Veiw-All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    transition: var(--transtion);
+}
+.Veiw-All:hover{
+    letter-spacing: 2px;
+}
+/**************** End Home ******************/
+
+
+/**************** Start About ******************/
+.box-header{
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    width: 100%;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-header h3{
+    color: var(--Secdonry);
+    font-size: 4rem;
+    
+}
+.box-header span {
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+.box-header span a{
+    text-decoration: none;
+    color: var(--background);
+}
+.box-about-img img{
+    max-width: 100%;
+}
+.box-content-About{
+    margin-top: 5rem;
+}
+.box-content-About h3{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+.box-content-About p{
+    font-size: 1.1rem;
+}
+.btn-about{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    width: 400px;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    transition: var(--transtion);
+}
+.btn-about:hover{
+    letter-spacing: 2px;
+}
+/******* SIMPLE ******/
+.box-simple{
+    border: var(--border);
+    text-align: center;
+    height: 25rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.box-smiple-img img{
+    max-width: 100%;
+    width: 200px;
+    height:15rem;
+    object-fit: contain;
+}
+.box-smiple-content p{
+    color: var(--light-color);
+}
+/********** box-reviwe************/
+.box-reviwe{
+    border: var(--border);
+    text-align: center;
+    height: 25rem;
+    padding: 0.5rem;
+}
+.box-reviwe img{
+    max-width: 100%;
+    width: 200px;
+    object-fit: contain;
+     border-radius: 50%;
+}
+.box-content-reviwe p{
+    max-width: 100%;
+}
+/**************** End About ******************/
+/**************** Start order ******************/
+.box-order{
+    margin-top: 5rem;
+    border: var(--border);
+    padding: 1rem;
+    text-align: start;
+    object-fit: contain;
+    max-width: 100%;
+}
+.box-order p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+.box-order p span{
+    color: var(--main-color);
+}
+
+/**************** End order ******************/
+
+/**************** End Conatct ******************/
+.box-contact{
+    margin: 5rem;
+    border: var(--border);
+    padding:1rem;
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+.box-contact-img img{
+    max-width: 100%;
+}
+.box-contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-contact form input{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    width: 350px;
+    border: var(--border);
+    max-width: 100%;
+}
+.box-contact form textarea{
+    max-width: 100%;
+}
+.btn-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    transition: var(--transtion);
+    margin-top: 1.5rem; 
+}
+.btn-contact:hover{
+    letter-spacing: 2px;
+}
+/**************** End Conatct ******************/
+
+/**************** Start chaeck-out ******************/
+.chaeck-out{
+    display: flex;
+    justify-content: space-between;
+    border: var(--border);
+    padding: 0.5rem;
+}
+.chaeck-out h5{
+    color: var(--light-color);
+    margin-top: 1rem;
+}
+.chaeck-out h5 span{
+    color: var(--main-color);
+}
+.btn-checkout{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    transition: var(--transtion);
+}
+.btn-checkout:hover{
+    letter-spacing: 2px;
+}
+/*** Edidte****/
+.fa-xx{
+    background-color: #dc3545;
+    padding: 1rem;
+    color: var(--Secdonry);
+}
+.delete{
+    position: relative;
+}
+.btn-delete{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: #dc3545;
+    color: var(--Secdonry) !important;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**************** End chaeck-out ******************/
+
+/**************** Start viwe-order ******************/
+.view-cart{
+    max-width: 50rem;
+    margin: 0 auto;
+    border: var(--border);
+    padding: 2rem;
+}
+.card-item {
+    background-color: var(--main-color);
+    padding: 2rem;
+}
+.card-item h5{
+    color: var(--Secdonry);
+    font-size: 2rem;
+}
+.card-item p{
+    color: var(--Secdonry);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.viwe-cart{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: var(--Secdonry);
+}
+.viwe-cart h5{
+    color: var(--main-color);
+}
+.viwe-cart span{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.btn-view{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    transition: var(--transtion);
+}
+.btn-view:hover{
+    letter-spacing: 2px;
+}
+.youer-info,.Delivery-Address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.youer-info h3{
+  font-size: 2rem;
+}
+.youer-info span{
+    font-size: 1.2rem;
+}
+.btn-update{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+    margin: 1rem;
+    width: 250px;
+    transition: var(--transtion);
+}
+.place-order{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--main-color);
+    color: var(--Secdonry) !important;
+    font-size: 1.3rem;
+    width: 100%;
+    transition: var(--transtion);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**************** End viwe-order ******************/
+
+/**************** Start Footer ******************/
+.footer{
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+.box-footer h3{
+    color: var(--Secdonry);
+    max-width: 100%;
+}
+.icon-star i{
+    color: var(--background);
+}
+/**************** End Footer ******************/
